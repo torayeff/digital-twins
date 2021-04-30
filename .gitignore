@@ -1,0 +1,17 @@
+.DS_Store
+data/
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+*.brf
+*.lbl
+*.out
+wandb/
+playground.py
+.ropeproject/
+tmp/

@@ -1,0 +1,67 @@
+{
+  "parts": [
+    {
+      "part_id": "base_plate",
+      "pick_approach_pose_offset": [0, 0, 120, 180, 0, 0],
+      "pick_pose_offset": [0, 0, 80, 180, 0, 0],
+      "pick_retract_pose_offset": [0, 0, 160, 180, 0, 0],
+      "place_approach_pose_offset": [0, 0, 120, 180, 0, 0],
+      "place_pose_offset": [0, 0, 80, 180, 0, 0],
+      "place_retract_pose_offset": [0, 0, 160, 180, 0, 0]
+    },
+
+    {
+      "part_id": "compound_gear",
+      "pick_approach_pose_offset": [0, 0, 120, 180, 0, 0],
+      "pick_pose_offset": [0, 0, 75, 180, 0, 0],
+      "pick_retract_pose_offset": [0, 0, 160, 180, 0, 0],
+      "place_approach_pose_offset": [0, 0, 140, 180, 0, 0],
+      "place_pose_offset": [0, 0, 90, 180, 0, 0],
+      "place_retract_pose_offset": [0, 0, 160, 180, 0, 0]
+    },
+
+    {
+      "part_id": "shaft1",
+      "pick_approach_pose_offset": [0, 0, 120, 180, 0, 0],
+      "pick_pose_offset": [0, 0, 45, 180, 0, 0],
+      "pick_retract_pose_offset": [0, 0, 180, 180, 0, 0],
+      "place_approach_pose_offset": [-46, 0, 180, 180, 0, 0],
+      "place_pose_offset": [-46, 0, 86, 180, 0, 0],
+      "place_retract_pose_offset": [-46, 0, 180, 180, 0, 0]
+    },
+
+    {
+      "part_id": "shaft2",
+      "pick_approach_pose_offset": [0, 0, 120, 180, 0, 0],
+      "pick_pose_offset": [0, 0, 45, 180, 0, 0],
+      "pick_retract_pose_offset": [0, 0, 180, 180, 0, 0],
+      "place_approach_pose_offset": [0, 46, 140, 180, 0, 0],
+      "place_pose_offset": [0, 46, 86, 180, 0, 0],
+      "place_retract_pose_offset": [0, 46, 180, 180, 0, 0]
+    },
+
+    {
+      "part_id": "gear1",
+      "pick_approach_pose_offset": [0, 0, 120, 180, 0, 0],
+      "pick_pose_offset": [0, 0, 65, 180, 0, 0],
+      "pick_retract_pose_offset": [0, 0, 180, 180, 0, 0],
+      "place_approach_pose_offset": [-46, 0, 180, 180, 0, 0],
+      "place_pose_offset": [-46, 0, 85, 180, 0, 0],
+      "place_retract_pose_offset": [-46, 0, 180, 180, 0, 0]
+    },
+
+    {
+      "part_id": "gear2",
+      "pick_approach_pose_offset": [0, 0, 120, 180, 0, 0],
+      "pick_pose_offset": [0, 0, 45, 180, 0, 0],
+      "pick_retract_pose_offset": [0, 0, 180, 180, 0, 0],
+      "place_approach_pose_offset": [0, 46, 140, 180, 0, 0],
+      "place_pose_offset": [0, 46, 65, 180, 0, 0],
+      "place_retract_pose_offset": [0, 46, 180, 180, 0, 0]
+    }
+  ],
+
+  "sequence": [
+    "base_plate", "compound_gear", "shaft1", "shaft2", "gear1", "gear2"
+  ]
+}
