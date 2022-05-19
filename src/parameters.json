@@ -1,0 +1,152 @@
+{
+  "experiment_name": "bo_simulation",
+  "robot_logger_params": {
+    "erase_prev": true,
+    "robot_model": "Fanuc",
+    "robot_host": "127.0.0.1",
+    "robot_port": 18736,
+    "sampling_rate": 50
+  },
+  "robot_params": {
+    "robot_model": "Fanuc",
+    "robot_host": "127.0.0.1",
+    "robot_port": 18735,
+    "robot_ee_DO_type": "RDO",
+    "robot_ee_DO_num": 7,
+    "home_pose": [212.633, -300.542, 185.808, 179.996, -0.01, 89.996],
+    "home_jpose": [0.0, -28.0, -35.0, 0.0, -55.0, 0.0]
+  },
+  "exp_params": {
+    "cycles": 2,
+    "static_params": {
+      "home": {
+        "move_type": "joint",
+        "pose": [0.0, -28.0, -35.0, 0.0, -55.0, 0.0],
+        "cnt_val": 0,
+        "linear": false
+      },
+      "pick_approach": {
+        "move_type": "joint",
+        "pose": [-15.43, 51.149, -38.91, 0.035, -50.231, -1.848],
+        "cnt_val": 0,
+        "linear": false
+      },
+      "pick": {
+        "move_type": "joint",
+        "pose": [-15.43, 60.957, -46.712, 0.04, -42.428, -1.854],
+        "cnt_val": 0,
+        "linear": false
+      },
+      "pick_retract": {
+        "move_type": "joint",
+        "pose": [-15.43, 51.149, -38.91, 0.035, -50.231, -1.848],
+        "cnt_val": 0,
+        "linear": false
+      },
+      "place_approach": {
+        "move_type": "joint",
+        "pose": [16.016, 52.928, -40.163, 0.623, -49.123, -33.676],
+        "cnt_val": 0,
+        "linear": false
+      },
+      "place": {
+        "move_type": "joint",
+        "pose": [16.016, 59.781, -45.567, 0.681, -43.719, -33.761],
+        "cnt_val": 0,
+        "linear": false
+      },
+      "place_retract": {
+        "move_type": "joint",
+        "pose": [16.016, 52.928, -40.163, 0.623, -49.123, -33.676],
+        "cnt_val": 0,
+        "linear": false
+      }
+    },
+    "tunable_params": [
+      {
+        "name": "home_velocity",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      },
+      {
+        "name": "home_acceleration",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      },
+      {
+        "name": "pick_approach_velocity",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      },
+      {
+        "name": "pick_approach_acceleration",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      },
+      {
+        "name": "pick_velocity",
+        "type": "range",
+        "bounds": [5, 40],
+        "value_type": "int"
+      },
+      {
+        "name": "pick_acceleration",
+        "type": "range",
+        "bounds": [5, 40],
+        "value_type": "int"
+      },
+      {
+        "name": "pick_retract_velocity",
+        "type": "range",
+        "bounds": [5, 40],
+        "value_type": "int"
+      },
+      {
+        "name": "pick_retract_acceleration",
+        "type": "range",
+        "bounds": [5, 40],
+        "value_type": "int"
+      },
+      {
+        "name": "place_approach_velocity",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      },
+      {
+        "name": "place_approach_acceleration",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      },
+      {
+        "name": "place_velocity",
+        "type": "range",
+        "bounds": [5, 40],
+        "value_type": "int"
+      },
+      {
+        "name": "place_acceleration",
+        "type": "range",
+        "bounds": [5, 40],
+        "value_type": "int"
+      },
+      {
+        "name": "place_retract_velocity",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      },
+      {
+        "name": "place_retract_acceleration",
+        "type": "range",
+        "bounds": [10, 100],
+        "value_type": "int"
+      }
+    ]
+  }
+}
