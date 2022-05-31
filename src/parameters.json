@@ -1,5 +1,5 @@
 {
-  "experiment_name": "bo_simulation",
+  "experiment_name": "analysis_bo",
   "robot_logger_params": {
     "erase_prev": true,
     "robot_model": "Fanuc",
