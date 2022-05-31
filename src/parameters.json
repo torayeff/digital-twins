@@ -17,7 +17,7 @@
     "home_jpose": [0.0, -28.0, -35.0, 0.0, -55.0, 0.0]
   },
   "exp_params": {
-    "cycles": 2,
+    "cycles": 3000,
     "static_params": {
       "home": {
         "move_type": "joint",
